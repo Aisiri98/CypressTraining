@@ -22,7 +22,7 @@ it('case1 ',function(){
     cy.get('#password').type(this.data.psw)
     cy.get('#term').click()
     cy.get('#submitbutton').click()
-    cy.wait(4000)
+    cy.wait(2000)
     cy.get('.tooltip-inner').should('contain','e-mail ID Already Exists')
 
 })
